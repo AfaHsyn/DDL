@@ -9,3 +9,31 @@ age number)
 
 alter table students
 add  address varchar(100)
+
+alter table students 
+add  grade number
+
+
+#DML
+
+insert into students (student_id,first_name,last_name,age,address,grade) 
+values (1,'Ali','Aliyev',19,'Baku',87); commit 
+
+insert into students (student_id,first_name,last_name,age,address,grade) 
+values (2,'Nigar','Hesenli',18,'Baku',76); commit 
+
+insert into students (student_id,first_name,last_name,age,address,grade) 
+values (3,'Leyla','Agayeva',20,'Sumgayit',56); commit 
+
+update students 
+set first_name='Azad'
+where student_id=1
+
+
+delete students 
+where first_name='Azad'
+
+
+
+
+#
