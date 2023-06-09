@@ -33,7 +33,12 @@ where student_id=1
 delete students 
 where first_name='Azad'
 
+#Select statements
 
 
-
-#
+select employee_id,max(salary)
+from employees 
+where salary > 600 and department_id=50
+group by employee_id
+order by employee_id desc
+fetch first 10 rows only
