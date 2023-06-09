@@ -44,8 +44,8 @@ order by employee_id desc
 fetch first 10 rows only
 
 
-select department_id
+select department_id,round(avg(salary),2)
 from employees 
 group by department_id
-having avg(salary)>1000
+having avg(salary)>1000 
 fetch first 5 rows only
