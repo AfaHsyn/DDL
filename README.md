@@ -42,3 +42,10 @@ where salary > 600 and department_id=50
 group by employee_id
 order by employee_id desc
 fetch first 10 rows only
+
+
+select department_id
+from employees 
+group by department_id
+having avg(salary)>1000
+fetch first 5 rows only
