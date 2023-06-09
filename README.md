@@ -49,3 +49,7 @@ from employees
 group by department_id
 having avg(salary)>1000 
 fetch first 5 rows only
+
+
+
+
